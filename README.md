@@ -24,8 +24,8 @@ Use mode RESTORE for restoring accidentally converted Distribution Groups using 
 
 ### About
 
-For more information on this script, as well as usage and examples, see
-the related blog article, [Exchange v15 Unattended Setup](https://eightwone.com/2013/02/18/exchange-2013-unattended-installation-script/).
+For more information on this script, as well as usage and examples, see the help.
+
 
 ## License
 
