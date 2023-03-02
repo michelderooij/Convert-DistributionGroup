@@ -117,7 +117,12 @@ param (
 Begin {
 
     If(!( Get-Command Get-DistributionGroup -ErrorAction SilentlyContinue)) {
-        Throw( 'Exchange cmdlets not available, connect to Exchange Online first.') 
+        If( @('Clone','Convert') -icontains $Mode) {
+            Throw( 'Exchange cmdlets not available, connect to Exchange Online first.') 
+        }
+        Else{
+            Throw( 'Exchange cmdlets not available, connect to Exchange on-premises first.') 
+        }
     }
 }
 
